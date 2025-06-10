@@ -8,6 +8,13 @@ filepath = kagglehub.dataset_download("ankurzing/sentiment-analysis-for-financia
 def load_data(filepath):
     df=pd.read_csv(filepath,sep=';',names=['sentiment','news'])
     return df
+def preprocess_text(text):
+    return text.lower().strip()
+#here in this file downloading the dataset from the kaggle website and then preprocessing the text 
+#and then returning the dataframe
+
+
+
 
 
 
