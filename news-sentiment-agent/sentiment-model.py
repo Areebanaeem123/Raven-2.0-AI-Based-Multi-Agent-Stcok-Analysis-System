@@ -48,7 +48,7 @@ test_dataset = dataset["test"]
 #now fine tuning the model 
 training_args= TrainingArguments(
     output_dir="./fine-tuned-model",
-    evaluation_strategy = "epoch",
+    do_eval = True ,
     learning_rate =2e-5,#how quickly the model is updating the weights 
     per_device_train_batch_size=16,
     per_device_eval_batch_size = 16,
